@@ -4,9 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ryan Vice</title>
+  <title>Ryan Vice | Web Developer</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.ico">
+
   <!-- Normalize CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+
   <!-- Internal CSS -->
   <link rel="stylesheet" href="css/styles.css">
 
@@ -17,95 +22,116 @@
 </head>
 
 <body>
-  <!-- Header w/ profile pic & basic info -->
+
+  <!-- Header - color bar or picture w/ Name -->
   <header id="pageHeader">
-    <div class="mainInfo">
-      <div class="group">
-        <div class="item"><img class="profilePic" src="images/profile.jpg" alt="profile-img"></div>
-        <div class="item">
-          <div class="textbox">
-            <h1>Ryan Vice</h1>
-            <h2>Web Developer</h2>
-          </div>
-        </div>
-      </div>
-    </div>
+    <h1>Ryan Vice</h1>
+    <h2>Web Developer</h2>
   </header>
 
-  <main>
-  <!-- about me blurb -->
-    <article>
-      <div id="pageContentMain">
-        <div class="profile">
-          <h2>Hi! I'm Ryan.</h2>
-          <div>
-            <p>I'm a full-time student studying <strong>Web Development</strong> and <strong>Software Engineering.</strong></p>
-            <p>I'm interested in starting my own business focused on apps in the gaming space.</p>
-            <p>Currently, I'm based in <strong>Bloomington, Indiana.</strong></p>
+  <nav>
+    <div class="navbar">
+      <a class="active" href="https://www.linkedin.com/in/ryan-vice/">LinkedIn</a>
+      <a href="mailto:chivemind@protonmail.ch?subject=feedback">Email</a>
+      <a href="https://github.com/ryanjvice">GitHub</a>
+    </div>
+  </nav>
+
+  <main id="pageContentMain">
+
+    <!-- Profile section w/ picture -->
+    <div class="hero">
+      <div class="wrapper">
+        <article class="profile">
+          <div class="group">
+            <div class="item"><img class="profilePic" src="images/profile.jpg" alt="profile-img"></div>
+            <div class="item">
+              <h2>Hi! I'm Ryan.</h2>
+              <div>
+                <p>I'm a full-time student studying <strong>Web Development</strong> and <strong>Software Engineering.</strong></p>
+                <p>Currently, I'm based in <strong>Bloomington, Indiana, USA.</strong></p>
+              </div>
+            </div>
           </div>
         </div>
+        </article>
       </div>
-    </article>
-
-    <hr>
-
-    <div>
-      <img class="computerPic" src="images/laptop.jpg" alt="computer-img">
     </div>
 
-    <article>
-      <!-- Areas of study blurb -->
-      <div class="skills">
-        <hr class="hr-text" data-content="What I'm Studying">
-        <h2>What I'm Learning </h2>
-        <div class="list">
-          <ol>
-            <li><span>Full-Stack Web Development & Design</span></li>
-            <li><span>Web Application / PWA Development</span></li>
-            <li><span>React, node.js, RESTful API & SQL</span></li>
-            <li><span>Python</span></li>
-          </ol>
-        </div>
-      </div>
-    </article>
-
+    <!-- HR & Food Pic -->
     <hr>
-
     <div>
       <img class="foodPic" src="images/skrimps.jpg" alt="garlic-shrimp-img">
     </div>
 
-    <article>
-      <!-- other interests blurb -->
-      <div class="other">
-        <h3>More About Me</h3>
-        <div class="list">
-          <ul>
-            <li>I traveled the country working as a chef for 15 years.</li>
-            <li>I love to play music.</li>
-            <li>I enjoy skiing, surfing, running & kickboxing.</li>
-          </ul>
+
+    <!-- About Me  Section -->
+    <article class="aboutMe">
+      <div class="group">
+        <div class="item">
+          <h2>My Journey</h2>
+        </div>
+        <div class="item">
+          <p>Before I started studying web development, I trained and worked as a chef for 15 years.</p>
+          <p>During my time working in kitchens all around the USA, I developed a strong skill set that I'm excited to bring with me into the world of IT.</p>
+        </div>
+        <div class="item">
+          <h3>My Skills</h3>
+        </div>
+          <div class="list">
+            <ul>
+              <li>I enjoy working as a part of a team.</li>
+              <li>Strong ability to excel in high pressure environments</li>
+              <li>Natural ability to lead, to teach and to help my colleagues in any way I can.</li>
+              <li>I'm constantly challenging myself to learn more and strengthen my existing skill set.</li>
+              <li>I'm driven to complete my goals, both professionally and personally.</li>
+            </ul>
+          </div>
         </div>
       </div>
     </article>
 
+    <!-- HR & Laptop Pic -->
     <hr>
-
     <div>
-      <img class="letterPic" src="images/letters.jpg" alt="letters-img">
+      <img class="computerPic" src="images/laptop.jpg" alt="computer-img">
     </div>
-  </main>
+
+
+
+    <!-- Areas of study blurb -->
+    <article class="skillTraining">
+      <div class="group">
+        <div class="item">
+          <h2>What I'm Learning </h2>
+        </div>
+        <div class="item">
+          <div class="list">
+            <ol>
+              <li><strong><em>HTML, CSS & JavaScript</em></strong></li>
+              <li><strong><em>React, node.js, RESTful API & SQL</em></strong></li>
+              <li><strong><em>Python Programming Language</em></strong></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- HR -->
+    <hr>
 
 <!-- Footer w/ social media & email links -->
   <footer id="pageFooter">
     <div>
       <h2>Contact Me</h2>
 <!-- Social media nav bar -->
-      <div class="navbar">
-        <a class="active" href="https://www.linkedin.com/in/ryan-vice/">LinkedIn</a>
-        <a href="mailto:chivemind@protonmail.ch?subject=feedback">Email</a>
-        <a href="https://github.com/ryanjvice">GitHub</a>
-      </div>
+      <nav>
+        <div class="navbar">
+          <a class="active" href="https://www.linkedin.com/in/ryan-vice/">LinkedIn</a>
+          <a href="mailto:chivemind@protonmail.ch?subject=feedback">Email</a>
+          <a href="https://github.com/ryanjvice">GitHub</a>
+        </div>
+      </nav>
       <p>&copy; 2021 Ryan Vice</p>
     </div>
   </footer>
