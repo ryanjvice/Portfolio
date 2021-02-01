@@ -65,6 +65,7 @@ hr {
   margin: 1.5em 0;
   text-align: center;
   border: none;
+  padding: 1rem;
 }
 
 hr:before {
@@ -88,6 +89,10 @@ hr:after {
 }
 
 /*----- Picture Formatting -----*/
+.computerPic, .foodPic, .letterPic {
+  padding: 1rem;
+}
+
 .computerPic, .profilePic, .foodPic {
   border-radius: 50%;
 }
@@ -121,7 +126,8 @@ hr:after {
 
 .list {
   text-align: left;
-  margin: 1rem 12rem 1rem 30rem;
+  padding: 0 20rem 2rem 45rem;
+
 }
 
 .mainInfo {
@@ -155,4 +161,8 @@ hr:after {
   content: "";
   display: table;
   clear: both;
+}
+
+.textbox {
+  padding-right: 20rem;
 }
