@@ -19,16 +19,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway&display=swap" rel="stylesheet">
 
+  <!-- Photo Credits
+    Background Photo by FWStudio from Pexels - https://www.pexels.com/@fwstudio-33348
+    Laptop Image from Pexels - https://pixabay.com/photos/coffee-computer-cup-desk-drink-1869820/
+  -->
+
 </head>
 
 <body>
 
-  <!-- Header - color bar or picture w/ Name -->
+<!-- Header - color bar or picture w/ Name -->
   <header id="pageHeader">
     <h1>Ryan Vice</h1>
     <h2>Web Developer</h2>
   </header>
 
+  <!-- Navbar -->
   <nav>
     <div class="navbar">
       <a class="active" href="https://www.linkedin.com/in/ryan-vice/">LinkedIn</a>
@@ -38,92 +44,92 @@
   </nav>
 
   <main id="pageContentMain">
+    <section class="textbox">
+      <!-- Profile section w/ picture -->
+      <article id="home">
 
-    <!-- Profile section w/ picture -->
-    <div class="hero">
-      <div class="wrapper">
-        <article class="profile">
-          <div class="group">
-            <div class="item"><img class="profilePic" src="images/profile.jpg" alt="profile-img"></div>
-            <div class="item">
-              <h2>Hi! I'm Ryan.</h2>
-              <div>
-                <p>I'm a full-time student studying <strong>Web Development</strong> and <strong>Software Engineering.</strong></p>
-                <p>Currently, I'm based in <strong>Bloomington, Indiana, USA.</strong></p>
-              </div>
+        <div class="group">
+          <div class="item">
+            <img class="profilePic" src="images/profile.jpg" alt="profile-img">
+          </div>
+          <hr>
+          <!-- Introduction -->
+          <div class="item">
+            <h3>Hi! I'm Ryan.</h3>
+            <div>
+              <p>I'm a full-time student studying <strong>Web Development</strong> and <strong>Software Engineering.</strong><br>
+              <p>Currently, I'm based in <strong>Bloomington, Indiana, USA.</strong></p>
             </div>
           </div>
         </div>
-        </article>
       </div>
-    </div>
+      </article>
 
-    <!-- HR & Food Pic -->
-    <hr>
-    <div>
-      <img class="foodPic" src="images/skrimps.jpg" alt="garlic-shrimp-img">
-    </div>
+      <hr>
 
-
-    <!-- About Me  Section -->
-    <article class="aboutMe">
-      <div class="group">
+      <!-- About Me  Section -->
+      <article id="aboutMe">
         <div class="item">
-          <h2>My Journey</h2>
+          <h3>My Journey</h2>
         </div>
+
         <div class="item">
           <p>Before I started studying web development, I trained and worked as a chef for 15 years.</p>
-          <p>During my time working in kitchens all around the USA, I developed a strong skill set that I'm excited to bring with me into the world of IT.</p>
+          <p>During that time, I developed a strong work ethic<br>&<br>a skill set that I'm excited to bring with me now into the world of IT.</p>
         </div>
+
         <div class="item">
-          <h3>My Skills</h3>
+          <h4>These Skills Include:</h4>
         </div>
+
+        <div class="item">
           <div class="list">
             <ul>
-              <li>I enjoy working as a part of a team.</li>
-              <li>Strong ability to excel in high pressure environments</li>
-              <li>Natural ability to lead, to teach and to help my colleagues in any way I can.</li>
-              <li>I'm constantly challenging myself to learn more and strengthen my existing skill set.</li>
-              <li>I'm driven to complete my goals, both professionally and personally.</li>
+              <li>A real passion for group collaboration.</li>
+              <li>The ability to lead, to teach and to help my colleagues in any way I can.</li>
+              <li>A strong ability to excel in high pressure, time-sensitive environments.</li>
+              <li>The constant desire to improve myself, both professionally and personally.</li>
+              <li>A willingness to take & integrate constructive criticism positively.</li>
+              <li>The ability to communicate in a professional, timely manner.</li>
             </ul>
           </div>
         </div>
-      </div>
-    </article>
-
-    <!-- HR & Laptop Pic -->
-    <hr>
-    <div>
-      <img class="computerPic" src="images/laptop.jpg" alt="computer-img">
-    </div>
-
-
-
-    <!-- Areas of study blurb -->
-    <article class="skillTraining">
-      <div class="group">
-        <div class="item">
-          <h2>What I'm Learning </h2>
-        </div>
-        <div class="item">
-          <div class="list">
+      </article>
+      <hr>
+      <article id="training">
+        <div class="group">
+          <div class="item">
+            <h3>My Training</h3>
             <ol>
-              <li><strong><em>HTML, CSS & JavaScript</em></strong></li>
-              <li><strong><em>React, node.js, RESTful API & SQL</em></strong></li>
-              <li><strong><em>Python Programming Language</em></strong></li>
+              <li><strong><a href="https://www.bloc.io/web-developer-track">Web Developer Bootcamp</a>, Thinkful / Bloc, Expected Graduation 08/01/2021</strong></li>
+              <li><strong><a href="https://www.ivytech.edu/software-development/">Associates of Applied Science in Sotware Development</a>, Ivy Tech - Expected Graduation, 12/15/2022</strong></li>
+              <li><strong><a href="http://maui.hawaii.edu/culinary/">Culinary Certificate of Completion</a>, Maui Culinary Academy, Completed 06/2008</strong></li>
             </ol>
           </div>
         </div>
+      </article>
+
+      <!-- HR & Laptop Pic -->
+      <div>
+        <img class="computerPic" src="images/laptop.jpg" alt="computer-img">
       </div>
-    </article>
+    </section>
 
-    <!-- HR -->
-    <hr>
+      <!-- Portfolio
+      <article id="portfolio">
+        <div class="group">
+          <div class="item">
 
+          </div>
+        </div>
+      </article>
+      -->
+    </section>
+  </main>
 <!-- Footer w/ social media & email links -->
   <footer id="pageFooter">
     <div>
-      <h2>Contact Me</h2>
+      <h2 class="h2">Contact Me</h2>
 <!-- Social media nav bar -->
       <nav>
         <div class="navbar">
@@ -132,7 +138,7 @@
           <a href="https://github.com/ryanjvice">GitHub</a>
         </div>
       </nav>
-      <p>&copy; 2021 Ryan Vice</p>
+      <p><strong>&copy; 2021 Ryan Vice</strong></p>
     </div>
   </footer>
 
