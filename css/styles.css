@@ -195,7 +195,7 @@ a:hover { color:  #df7861;}
 }
 
 /* ----- Banners ------*/
-#banner {
+.banner {
   position: relative;
   height: 10%;
   padding-top: 2%;
