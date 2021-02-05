@@ -28,102 +28,145 @@
 
 <body>
 
+<!--
+Assignment Requirements
+  page layout w/ flexbox
+  implement appropriate media queries for responsive design
+  utililze semantic, valid markup
+  built from scratch
+  No typos
+  Content clarity & readability
+
+Intro <section>
+  who you are
+  where you are
+  what you do that makes you special
+</section>
+
+about me <section>
+  demonstrate your passion for the web
+  demonstrate desire to work on a team with great programmers
+  show your personality outside of coding
+  list of services you can (or want) to provide a client
+</section>
+
+contact <section>
+  email address
+  link to GitHub
+  link to LinkedIn
+</section>
+
+project (use sample placeholder content)<section>
+  project title
+  project description
+  link to project
+</section>
+-->
+
 <!-- Header - color bar or picture w/ Name -->
-  <header id="pageHeader">
+  <header id="banner">
     <h1>Ryan Vice</h1>
     <h2>Web Developer</h2>
+    <!-- Navbar -->
+    <nav>
+      <div class="navbar">
+        <a class="active" href="https://www.linkedin.com/in/ryan-vice/">LinkedIn</a>
+        <a href="mailto:chivemind@protonmail.ch?subject=feedback">Email</a>
+        <a href="https://github.com/ryanjvice">GitHub</a>
+      </div>
+    </nav>
   </header>
 
-  <!-- Navbar -->
-  <nav>
-    <div class="navbar">
-      <a class="active" href="https://www.linkedin.com/in/ryan-vice/">LinkedIn</a>
-      <a href="mailto:chivemind@protonmail.ch?subject=feedback">Email</a>
-      <a href="https://github.com/ryanjvice">GitHub</a>
-    </div>
-  </nav>
-
   <main id="pageContentMain">
-    <div class="textbox">
-      <!-- Profile section w/ picture -->
-      <article id="home">
+    <div class="wrapper">
 
+      <!-- Profile section w/ picture -->
+      <article id="intro">
         <div class="group">
           <div class="item">
             <img class="profilePic" src="images/profile.jpg" alt="profile-img">
           </div>
-          <hr>
+
           <!-- Introduction -->
-          <div class="item">
-            <h3>Hi! I'm Ryan.</h3>
+          <div class="item-double">
+            <h3>Hi! <span class="spacer"></span>I'm Ryan.</h3>
             <div>
-              <p>I'm a full-time student studying <strong>Web Development</strong> and <strong>Software Engineering.</strong><br>
-              <p>Currently, I'm based in <strong>Bloomington, Indiana, USA.</strong></p>
+              <p>I'm a full-time student studying <strong>Web Development</strong> and <strong>Software Engineering</strong>.</p>
+              <p>I live in <strong>Bloomington, Indiana, USA.</strong></p>
+              <p>As a former chef, my focus in on efficiency, consistency and quality in the work I do.</p>
+              <div class="list">
+                <ul>
+                  <li><h4>My Strengths:</h4></li>
+                  <li>I have a real passion for group collaboration.</li>
+                  <li>I possess the abilityto excel in high-pressure, time-sensitive environments.</li>
+                  <li>I encourage and take constructive criticism in a positive manner.</li>
+                  <li>I value honest, professional, timely communication.</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
-      </article>
-
       <hr>
-
-      <!-- About Me  Section -->
-      <article id="aboutMe">
-        <div class="item">
-          <h3>My Journey</h3>
-        </div>
-
-        <div class="item">
-          <p>Before I started studying web development, I trained and worked as a chef for 15 years.</p>
-          <p>During that time, I developed a strong work ethic<br>&<br>a skill set that I'm excited to bring with me now into the world of IT.</p>
-        </div>
-
-        <div class="item">
-          <h4>These Skills Include:</h4>
-        </div>
-
-        <div class="item">
-          <div class="list">
-            <ul>
-              <li>Over the years, I've developed a real passion for group collaboration.</li>
-              <li>Working as a chef helped to cultivate the ability to excel in high-pressure, time-sensitive environments.</li>
-              <li>I encourage and take constructive criticism in a positive manner.</li>
-              <li>I value honest, professional, timely communication.</li>
-            </ul>
-          </div>
-        </div>
       </article>
-      <hr>
-      <article id="training">
-        <div class="group">
-          <div class="item">
-            <h3>My Training</h3>
-            <ol>
-              <li><strong><a href="https://www.bloc.io/web-developer-track">Web Developer Bootcamp</a>, Thinkful / Bloc, Expected Graduation 08/01/2021</strong></li>
-              <li><strong><a href="https://www.ivytech.edu/software-development/">Associates of Applied Science in Sotware Development</a>, Ivy Tech - Expected Graduation, 12/15/2022</strong></li>
-              <li><strong><a href="http://maui.hawaii.edu/culinary/">Culinary Certificate of Completion</a>, Maui Culinary Academy, Completed 06/2008</strong></li>
-            </ol>
-          </div>
-        </div>
-      </article>
-
-      <!-- HR & Laptop Pic -->
-      <div>
-        <img class="computerPic" src="images/laptop.jpg" alt="computer-img">
-      </div>
     </div>
 
-      <!-- Portfolio
+    <div class="wrapper">
+      <!-- About Me  Section -->
+      <article id="about">
+        <div class="group">
+          <div class="item-double">
+            <h3>About Me</h3>
+            <p>I've spent most of my life as an artist. I love to play music, draw, write and act. If you were to tell me even ten years ago that one day, I'd be a "programmer," I'd have rolled my eyes and laughed. Over the past decade, however, technology has become such an integral part of our day-to-day lives that I felt compelled to learn more about computers.</p>
+<p>It's fair to say that what started as a curiosity has evolved into a passion of mine. I love the problem-solving aspect of writing code, the imaginative ways that coders go about making their programs work, the fascinating things that we can build with these lines of code. It's an art form, and I think that's what resonates with me most about this field.</p>
+          </div>
+          <div class="item">
+            <div class="list">
+              <h3>My <span class="spacer"></span>Training</h3>
+              <ol>
+                <li><strong><a href="https://www.bloc.io/web-developer-track">Web Developer Bootcamp</a>, Thinkful / Bloc</strong><br>Expected Graduation 08/01/2021</li>
+                <li><strong><a href="https://www.ivytech.edu/software-development/">AAS in Sotware Development</a>, Ivy Tech</strong><br>Expected Graduation, 12/15/2022</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </article>
+    </div>
+
+    <div class="wrapper">
+      <!-- Portfolio   -->
       <article id="portfolio">
+        <h3>Portfolio</h3>
         <div class="group">
           <div class="item">
-
+            <img class="panelPic" src="images/portfolio.png" alt="portfolio-img">
+            <h4>Quiz App</h4>
+            <p>This is a description of the Quiz App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+          </div>
+          <div class="item">
+            <img class="panelPic" src="images/portfolio.png" alt="portfolio-img">
+            <h4>Bookmark App</h4>
+            <p>This is a description of the Bookmark App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+          </div>
+        </div>
+        <div class="group">
+          <div class="item">
+            <img class="panelPic" src="images/portfolio.png" alt="portfolio-img">
+            <h4>Pet Appointment App</h4>
+            <p>This is a description of the Pet Appointment App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
+          </div>
+          <div class="item">
+            <img class="panelPic" src="images/portfolio.png" alt="portfolio-img">
+            <h4>Team Project App</h4>
+            <p>This is a description of the Team Project App I built. I'll share what my goal was in creating it, the skills/languages I applied, and what I learned doing it.</p>
           </div>
         </div>
       </article>
-      -->
+    </div>
+
   </main>
 <!-- Footer w/ social media & email links -->
-  <footer id="pageFooter">
+  <footer id="banner">
     <div>
       <h2 class="h2">Contact Me</h2>
 <!-- Social media nav bar -->
