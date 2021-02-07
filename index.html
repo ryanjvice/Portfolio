@@ -20,8 +20,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway&display=swap" rel="stylesheet">
 
   <!-- Photo Credits
-    Background Photo by FWStudio from Pexels - https://www.pexels.com/@fwstudio-33348
+    Panels Photo by FWStudio from Pexels - https://www.pexels.com/@fwstudio-33348
     Laptop Image from Pexels - https://pixabay.com/photos/coffee-computer-cup-desk-drink-1869820/
+    Pattern Image by Edmund Joseph from Pixabay - https://pixabay.com/vectors/pattern-triangles-random-seamless-1746497/
+    Tiles Image by Pexels from Pixabay - https://pixabay.com/photos/tiles-backdrop-bathroom-ceramic-1846980/
   -->
 
 </head>
@@ -36,6 +38,7 @@ Assignment Requirements
   built from scratch
   No typos
   Content clarity & readability
+  **Use Responsive Navigation
 
 Intro <section>
   who you are
@@ -54,6 +57,8 @@ contact <section>
   email address
   link to GitHub
   link to LinkedIn
+
+  **functional contact form
 </section>
 
 project (use sample placeholder content)<section>
@@ -83,7 +88,7 @@ project (use sample placeholder content)<section>
       <!-- Profile section w/ picture -->
       <article id="intro">
         <div class="group">
-          <div class="item">
+          <div class="item-pic">
             <img class="profilePic" src="images/profile.jpg" alt="profile-img">
           </div>
 
@@ -93,12 +98,11 @@ project (use sample placeholder content)<section>
             <div>
               <p>I'm a full-time student studying <strong>Web Development</strong> and <strong>Software Engineering</strong>.</p>
               <p>I live in <strong>Bloomington, Indiana, USA.</strong></p>
-              <p>As a former chef, my focus in on efficiency, consistency and quality in the work I do.</p>
+              <hr>
               <div class="list">
                 <ul>
-                  <li><h4>My Strengths:</h4></li>
                   <li>I have a real passion for group collaboration.</li>
-                  <li>I possess the abilityto excel in high-pressure, time-sensitive environments.</li>
+                  <li>I possess the ability to excel in high-pressure, time-sensitive environments.</li>
                   <li>I encourage and take constructive criticism in a positive manner.</li>
                   <li>I value honest, professional, timely communication.</li>
                 </ul>
@@ -106,7 +110,6 @@ project (use sample placeholder content)<section>
             </div>
           </div>
         </div>
-      <hr>
       </article>
     </div>
 
@@ -115,28 +118,25 @@ project (use sample placeholder content)<section>
       <article id="about">
         <div class="group">
           <div class="item-double">
-            <h3>About Me</h3>
-            <p>I've spent most of my life as an artist. I love to play music, draw, write and act. If you were to tell me even ten years ago that one day, I'd be a "programmer," I'd have rolled my eyes and laughed. Over the past decade, however, technology has become such an integral part of our day-to-day lives that I felt compelled to learn more about computers.</p>
-<p>It's fair to say that what started as a curiosity has evolved into a passion of mine. I love the problem-solving aspect of writing code, the imaginative ways that coders go about making their programs work, the fascinating things that we can build with these lines of code. It's an art form, and I think that's what resonates with me most about this field.</p>
+            <h3>About <span class="spacer">Me</span></h3>
           </div>
           <div class="item">
             <div class="list">
               <h3>My <span class="spacer"></span>Training</h3>
               <ol>
-                <li><strong><a href="https://www.bloc.io/web-developer-track">Web Developer Bootcamp</a>, Thinkful / Bloc</strong><br>Expected Graduation 08/01/2021</li>
-                <li><strong><a href="https://www.ivytech.edu/software-development/">AAS in Sotware Development</a>, Ivy Tech</strong><br>Expected Graduation, 12/15/2022</li>
+                <li><strong><a href="https://www.bloc.io/web-developer-track">Web Developer Bootcamp</a> Thinkful / Bloc</strong><br><em>Expected Graduation: 08/01/2021</em></li>
+                <li><strong><a href="https://www.ivytech.edu/software-development/">AAS in Sotware Development</a> Ivy Tech</strong><br><em>Expected Graduation: 12/15/2022</em></li>
               </ol>
             </div>
           </div>
         </div>
-        <hr>
       </article>
     </div>
 
     <div class="wrapper">
       <!-- Portfolio   -->
       <article id="portfolio">
-        <h3>Portfolio</h3>
+        <h2>Portfolio</h2>
         <div class="group">
           <div class="item">
             <img class="panelPic" src="images/portfolio.png" alt="portfolio-img">
@@ -164,12 +164,31 @@ project (use sample placeholder content)<section>
       </article>
     </div>
 
+    <div class="wrapper">
+      <section id="contact">
+        <h2 class="h2">Contact Me</h2>
+        <div class="group">
+          <div class="item-double">
+            <form action="#" method="post">
+              <label for="user-name">Name:</label>
+              <input id="user-name" type="text" name="name">
+
+              <label for="user-email">Email:</label>
+              <input id="user-email" type="text" name="email">
+
+              <label for="user-message">Message:</label>
+              <textarea id="user-message" name="message"></textarea>
+              <button type="submit">Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
   </main>
 <!-- Footer w/ social media & email links -->
   <footer class="banner">
-    <div>
-      <h2 class="h2">Contact Me</h2>
-<!-- Social media nav bar -->
+    <div class="wrapper">
+      <!-- Social media nav bar -->
       <nav>
         <div class="navbar">
           <a class="active" href="https://www.linkedin.com/in/ryan-vice/">LinkedIn</a>
@@ -177,8 +196,9 @@ project (use sample placeholder content)<section>
           <a href="https://github.com/ryanjvice">GitHub</a>
         </div>
       </nav>
-      <p><strong>&copy; 2021 Ryan Vice</strong></p>
+      <h5>&copy; 2021 Ryan Vice</h5>
     </div>
+
   </footer>
 
 </body>
