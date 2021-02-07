@@ -19,6 +19,7 @@ nav {
   overflow: hidden;
   position: relative;
   padding-bottom: 2%;
+  justify-content: center;
 }
 
 
@@ -27,20 +28,27 @@ h1 {
   margin: 50px auto 0 auto;
   font-family: 'Raleway', sans-serif;
   font-size: 3.5rem;
-  color: white;
+  color: #f0f2ef;
   text-decoration: none;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 2px 2px 4px #5c5346;
 }
 
 h2 {
   font-size: 1.75rem;
-  color: white;
+  color: #f0f2ef;
   text-decoration: none;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 2px 2px 4px #5c5346;
+  font-family: 'Montserrat', sans-serif;
 }
 
-h2, h3, h4 {
+h3, h4 {
   font-family: 'Montserrat', sans-serif;
+  color: #5c5346;
+}
+
+h5 {
+  color: #f0f2ef;
+  text-shadow: 2px 2px 4px #5c5346;
 }
 
 hr {
@@ -57,7 +65,7 @@ hr:before {
   height: 14px;
   border-radius: 50%;
   margin: 0 0.4em;
-  background-color: #df7861;
+  background-color: #8c6057;
 }
 
 hr:after {
@@ -67,11 +75,36 @@ hr:after {
   height: 14px;
   border-radius: 50%;
   margin: 0 0.4em;
-  background-color: #df7861;
+  background-color: #8c6057;
 }
 
 p {
   line-height: 1.5;
+  color: #5c5346;
+}
+
+/*----- Forms -----*/
+form {
+  padding: 2rem;
+}
+
+form button {
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  border: 1px solid  #5c5346;
+  background: #afd5aa;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  color: #f0f2ef;
+  border: 1px solid  #5c5346;
+}
+
+form textarea {
+  height: 10rem;
 }
 
 /*----- Lists -----*/
@@ -87,7 +120,6 @@ ul {
 .list {
   text-align: center;
   line-height: 1.5;
-  font-style: italic;
 }
 
 /*----- Picture Formatting -----*/
@@ -98,9 +130,13 @@ ul {
   height: auto;
 }
 
+.profilePic {
+  border: 1px solid  #5c5346;
+}
+
 .panelPic {
-  border-radius: 10%;
   position: relative;
+  border-radius: 2%;
   max-width: 80%;
   height: auto;
 }
@@ -111,10 +147,13 @@ ul {
   flex-direction: column;
 }
 
+.item, .item-double {
+  padding: 0 1% .25rem 1%;
+  width: 100%;
+}
+
 .item {
   flex: 1;
-  padding: 0 1% .25rem 1%;
-  width: 100%
 }
 
 .item-double {
@@ -125,33 +164,32 @@ ul {
   position: relative;
   height: auto;
   width: 100%;
-
 }
 
-/*----- Spacing -----*/
+/*----- Text Format -----*/
 .spacer {
-  padding-left: 4px;
+  padding-left: 3px;
 }
 
 /*----- A link -----*/
 a:link {text-decoration: none;}
-a:visited, a:active { color: black;}
-a:hover { color:  #df7861;}
+a:visited, a:active { color: #5c5346;}
+a:hover { color:  #8c6057;}
 
 
 /*----- Navbar -----*/
 .navbar a {
   text-align: center;
   padding: 1rem;
-  color: white;
+  color: #f0f2ef;
   text-decoration: none;
-  text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px #5c5346;
   font-size: 1.5rem;
 }
 
-.navbar a:hover {color:  #df7861;}
+.navbar a:hover {color:  #8c6057;}
 
-.navbar a::after { color: black;
+.navbar a::after { color: #5c5346;
 }
 
 .nav:after {
@@ -173,13 +211,24 @@ a:hover { color:  #df7861;}
 .item {
   flex: 1;
   margin: 10px;
+  padding: 2rem 4rem;
+  background-color: #F4FDF4;
+  border-radius: 8%;
+}
+
+.item-pic {
+  flex: 1;
+  margin: 10px;
   padding: 0 4rem;
+  border-radius: 5%;
 }
 
 .item-double {
   flex: 2;
   margin: 10px;
   padding: 0 3rem;
+  background-color: #F4FDF4;
+  border-radius: 4%;
 }
 
 /*----- Groups & Items (Desktop)-----*/
@@ -204,21 +253,42 @@ a:hover { color:  #df7861;}
 }
 
 /* ----- Articles -----*/
-#intro, #about, #portfolio {
+#intro, #about, #portfolio, #contact {
+  position: relative;
   height: auto;
   width: 100%;
   padding: 2rem;
 }
 
-/* ----- Intro & Portfolio -----*/
-#intro, #portfolio {
-  position: relative;
-  background-color: #fcf8e8;
+#intro {
+  background-image: url(../images/woodRings.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 6%;
+  border-top-right-radius: 6%;
 }
 
-/* ----- About -----*/
 #about {
-  position: relative;
-  background-color: #d4e2d4;
+  background-image: url(../images/pattern.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
+}
+
+#portfolio {
+  background-image: url(../images/tiles.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#contact {
+  background-image: url(../images/woodRings.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-bottom-left-radius: 6%;
+  border-bottom-right-radius: 6%;
 }
