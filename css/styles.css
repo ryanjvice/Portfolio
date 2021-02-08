@@ -22,7 +22,6 @@ nav {
   justify-content: center;
 }
 
-
 /*----- Type -----*/
 h1 {
   margin: 50px auto 0 auto;
@@ -38,7 +37,6 @@ h2 {
   color: #f0f2ef;
   text-decoration: none;
   text-shadow: 2px 2px 4px #5c5346;
-  font-family: 'Montserrat', sans-serif;
 }
 
 h3, h4 {
@@ -212,7 +210,7 @@ a:hover { color:  #8c6057;}
   flex: 1;
   margin: 10px;
   padding: 2rem 4rem;
-  background-color: #F4FDF4;
+  background-color: #f0f2ef;
   border-radius: 8%;
 }
 
@@ -227,7 +225,7 @@ a:hover { color:  #8c6057;}
   flex: 2;
   margin: 10px;
   padding: 0 3rem;
-  background-color: #F4FDF4;
+  background-color: #f0f2ef;
   border-radius: 4%;
 }
 
