@@ -19,6 +19,7 @@ nav {
   overflow: hidden;
   position: relative;
   padding-bottom: 2%;
+  display: flex;
   justify-content: center;
 }
 
@@ -49,6 +50,12 @@ h5 {
   text-shadow: 2px 2px 4px #5c5346;
 }
 
+p {
+  line-height: 1.5;
+  color: #5c5346;
+}
+
+/*----- HR -----*/
 hr {
   margin: 1.5em 0;
   text-align: center;
@@ -76,11 +83,6 @@ hr:after {
   background-color: #8c6057;
 }
 
-p {
-  line-height: 1.5;
-  color: #5c5346;
-}
-
 /*----- Forms -----*/
 form {
   padding: 2rem;
@@ -106,7 +108,6 @@ form textarea {
 }
 
 /*----- Lists -----*/
-
 ol {
   list-style: none;
 }
@@ -241,16 +242,7 @@ a:hover { color:  #8c6057;}
   }
 }
 
-/* ----- Banners ------*/
-.banner {
-  position: relative;
-  height: 10%;
-  padding-top: 2%;
-  padding-bottom: 2%;
-
-}
-
-/* ----- Articles -----*/
+/*----- Articles -----*/
 #intro, #about, #portfolio, #contact {
   position: relative;
   height: auto;
@@ -258,25 +250,8 @@ a:hover { color:  #8c6057;}
   padding: 2rem;
 }
 
-#intro {
-  background-image: url(../images/woodRings.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-top-left-radius: 6%;
-  border-top-right-radius: 6%;
-}
-
 #about {
   background-image: url(../images/pattern.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-}
-
-#portfolio {
-  background-image: url(../images/tiles.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -289,4 +264,27 @@ a:hover { color:  #8c6057;}
   background-position: center;
   border-bottom-left-radius: 6%;
   border-bottom-right-radius: 6%;
+}
+
+#intro {
+  background-image: url(../images/woodRings.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 6%;
+  border-top-right-radius: 6%;
+}
+
+#pageFooter, #pageHeader {
+  position: relative;
+  height: 10%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#portfolio {
+  background-image: url(../images/tiles.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
