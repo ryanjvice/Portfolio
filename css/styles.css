@@ -108,17 +108,18 @@ form textarea {
 }
 
 /*----- Lists -----*/
+.list {
+  text-align: center;
+  line-height: 1.5;
+}
+
 ol {
   list-style: none;
 }
 
 ul {
   list-style: none;
-}
-
-.list {
-  text-align: center;
-  line-height: 1.5;
+  line-height: 1.75rem;
 }
 
 /*----- Picture Formatting -----*/
