@@ -99,7 +99,8 @@ form button {
 form input,
 form textarea {
   width: 100%;
-  color: #f0f2ef;
+  background: #f0f2ef;
+  color: black;
   border: 1px solid  #5c5346;
 }
 
